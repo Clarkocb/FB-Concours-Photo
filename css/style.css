@@ -1,0 +1,984 @@
+/* CSS Document */
+
+@font-face{
+	font-family:'Din Medium';
+	src: url('../font/ufonts.com_din_medium.eot');
+}
+
+@font-face{
+	font-family:'Yanone Regular';
+	src: url('../fonts/yanonekaffeesatz-bold-webfont.eot');
+	src: url('../fonts/yanonekaffeesatz-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/yanonekaffeesatz-regular-webfont.woff') format('woff'),
+		 url('../font/yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/yanonekaffeesatz-bold-webfont.svg#yanone_kaffeesatzbold') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family:'Yanone Bold';
+	src: url('../font/yanonekaffeesatz-bold-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+body {
+	margin:0;
+	overflow: hidden;
+	font-family: 'Yanone Regular', 'Lucida Sans', 'Lucida Sans Unicode', helvetica, arial, sans-serif;
+	color: #444444;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.inline-block { display: inline-block}
+
+a{
+	cursor: pointer;
+	color: #444444;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #444444;
+}
+
+img {
+	border:0;
+}
+
+span {
+	color: #444444;
+}
+
+.center {
+	text-align:center;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.container {
+	margin:0 auto;
+	width:810px;
+}
+
+
+
+.footer {
+margin: 10px 0 0;
+text-align: justify;
+line-height: 16px;
+font-size: 16px;
+color: #444444;
+font-weight: 500;
+}
+
+.footer p {
+	margin:0;
+}
+
+.divError {
+	text-align:center;
+}
+
+.box {
+	width: 120px;
+	height: 180px;
+	display: inline-block;
+	border: 1px solid grey;
+	margin: 20px;
+	background-color: green;
+	position: absolute;
+}
+.copyright {
+	text-align: right;
+}
+
+.backgroundCarousel {
+	background-image: url('../img/bkg-caroussel.jpg');
+}
+
+.bkgStart{
+	background-image: url('../img/bckg.jpg');
+	padding: 0 !important;
+}
+
+.bkgGallerie {
+	background-image: url('../img/bg_galerie.jpg');
+}
+
+.bkgStandard {
+	background-image: url('../img/bckg-form.jpg');
+}
+
+.formPassport {
+	background-image: url('../img/bkg-form-inscription.png');
+	width: 440px;
+	height: 588px;
+	position: absolute;
+	left: 183px;
+	top: 20px;
+}
+
+.formPassport input[type="text"] {
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	margin: 0 0 0.49em 0;
+	-webkit-box-shadow: none;
+}
+
+.btnValide {
+	position: absolute;
+	margin-top: 80px;
+	margin-left: -15px;
+}
+.btnValide {
+	background: url('../img/btn-je-valide.png');
+	border: 0;
+	width: 150px;
+	height: 46px;
+	font-size: 0;
+}
+
+/*.btn-previous {
+background-image: url('../img/fleche_gauche.jpg');
+border: none;
+font-size: 0;
+width: 25px;
+height: 25px;
+}
+
+.btn-next {
+background-image: url('../img/fleche_droite.jpg');
+border: none;
+font-size: 0;
+width: 25px;
+height: 25px;
+}*/
+
+
+.formContainer {
+	padding-top: 267px;
+	padding-left: 164px;
+}
+.paysContainer {
+	text-align: center;
+}
+#prenom {
+	padding-left: 32px;
+}
+#mail {
+	padding-left: 15px;
+}
+#age {
+	padding-left: 15px;
+}
+
+#departement {
+	padding-left: 85px;
+}
+#tel {
+	margin-left: 10px;
+}
+
+.alert-custom-pos {
+	width: 65%;
+	top: 15px;
+	position: relative;
+	margin-left: 140px;
+}
+
+.banner-yop {
+	position: absolute;
+	top: 146px;
+	z-index: 10000;
+}
+
+.text {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.clear-float{
+	clear: both;
+}
+
+.bottom-link {
+	position: relative;
+	text-align: center;
+	margin-top: 560px;
+	color: #FCC111;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.bottom-link a{
+	color: #FCC111;
+
+}
+.bottom-link a:hover {
+	color: #FFE000;
+}
+
+
+.div-error {
+padding: 10px 20px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+position: absolute;
+background-color: #6FB022;
+text-align: center;
+margin-top: 240px;
+margin-left: 270px;
+width: 300px;
+color: #FFF;
+}
+
+.doc {
+margin: 0 3px;
+}
+
+/******************* gallery css *****************/
+
+.gallery-box {
+margin-top: auto;
+padding: 0px 15px;
+margin-bottom: 100px;
+}
+
+.gallery-unit {
+display: inline-block;
+padding: 0 21px 0px;
+width: 160px;
+margin-right: 25px;
+margin-bottom: 15px;
+}
+
+.gallery-unit h1 {
+font-size: 14px;
+font-weight: 600;
+color: #444444;
+margin-top: 14px;
+margin-bottom: 6px;
+}
+
+.photo-box {
+height: 100px;
+overflow: hidden;
+}
+
+.photo-box img {
+	vertical-align: top;
+}
+
+.pagination-btn {
+/*position: absolute;
+top: 770px;
+margin-left: 360px;*/
+}
+
+.btn-previous {
+	margin-right: 15px;
+}
+
+#page-gallery .content-block {
+	text-align: left;
+}
+
+#page-gallery .paginated {
+	padding: 0 20px;
+}
+
+#page-gallery .fb-like {
+overflow: hidden;
+height: auto;
+margin-top: 0;
+}
+
+#page-gallery .shareBox {
+	padding: 4px 10px;
+}
+
+#page-gallery .btn-box {
+	background-color: #E3001B;
+}
+
+#page-gallery .score {
+text-transform: uppercase;
+color: #FFF;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 1px;
+position: absolute;
+}
+
+#page-gallery .btn-box span {
+	display: block;
+padding: 12px 0;
+color: #FFF;
+text-align: center;
+}
+
+#page-gallery .pagination-btn {
+text-align: center;
+}
+
+#page-gallery .pagination-btn {
+position: absolute;
+width: 810px;
+top: 600px;
+}
+
+#page-gallery .modal-body {
+	padding: 0 12px 10px;
+	text-align: center;
+}
+
+#page-gallery .modal-body .modal-thumb {
+/*width: 573px;*/
+max-height: 600px;
+}
+
+#page-gallery .btn-container {
+display: inline-block;
+position: absolute;
+width: 810px;
+text-align: center;
+top: 610px;
+}
+
+#page-gallery #form-inscription {
+	display: inline-block;
+}
+
+#page-gallery .underImage-block {
+	text-align: center;
+padding-top: 3px;
+}
+
+.modal-dialog {
+width: 625px;
+}
+
+.modal-header {
+padding: 0px;
+}
+
+.modal-header .close {
+margin-top: 0px;
+position: absolute;
+right: 5px;
+}
+
+/*******************************************   Forms    ****************************************/
+::-webkit-input-placeholder {
+	color: #00255D;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #00255D;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #00255D;
+}
+
+:-ms-input-placeholder {
+	color: #00255D;
+}
+
+.form-code-msg {
+	display: none;
+	padding-top: 15px;
+	font-weight: 900;
+	color: #279C3E;
+}
+
+.form-portrait {
+	position: absolute;
+	top: 94px;
+	left: 434px;
+	z-index: 1;
+	width: 115px;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+/***************** Sprite ***********/
+
+.sprite-txt {
+	background-image: url('../img/sprite_textes.png');
+	width: 800px;
+	position: absolute;
+}
+
+.sprite-txt.fangate {
+	height: 210px;
+	top: 310px;
+}
+
+
+.sprite-btn {
+	background: url('../img/sprite_boutons.png');
+}
+
+.sprite-btn.je-participe {
+	width: 230px;
+	height: 100px;
+	background-position: -21px -29px;
+}
+
+
+.sprite-txt.maParticipation {
+	height: 100px;
+	top: 330px;
+	background-position: 0px -230px;
+}
+
+.sprite-txt.txt-reglement {
+	top: 440px;
+	background-position: 0px -340px;
+	height: 60px;
+}
+
+.sprite-btn.btn-maParticipation {
+	width: 241px;
+	height: 56px;
+	background-position: -21px -164px;
+	border: none;
+	font-size: 0;
+	margin-top: 522px;
+	margin-left: 290px;
+}
+
+.radius {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sprite-txt.txt-afterForm {
+top: 330px;
+background-position: 0px -450px;
+height: 140px;
+}
+
+.sprite-btn.btn-afterForm {
+width: 241px;
+height: 56px;
+background-position: -21px 89px;
+border: none;
+font-size: 0;
+margin-left: 290px;
+position: absolute;
+margin-top: 510px;
+}
+
+.sprite-txt.txt-recent {
+background-position: 0px -640px;
+height: 60px;
+top: 204px;
+}
+
+.sprite-txt.txt-popular {
+background-position: 0px -740px;
+height: 60px;
+top: 204px;
+}
+
+/***************** form ***********/
+
+.inputfile input {
+	position: relative;
+	font-size: 32px;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+	margin-left: 62px;
+	margin-top: 70px;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+	left: 0;
+	background: #eee;
+	border:1px solid #ddd;
+}
+.checkboxFive label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 7px;
+	background: rgba(0, 0, 0, 0);
+	top: 6px;
+	left: 6px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+ .checkboxFive label:hover::after {
+ 	opacity: 0.5;
+ }
+
+/**
+ * Create the checkbox state for the tick
+ */
+ .checkboxFive input[type=checkbox]:checked + label:after {
+ 	opacity: 1;
+ }
+
+
+
+
+ /***************** menu **************/
+
+ .menu-top {
+ 	position: absolute;
+ 	margin-top: 20px;
+ 	margin-left: 310px;
+ }
+
+
+ .menu-top a {
+ 	color: #FFF;
+ 	padding: 0 7px;
+ 	font-weight: 500;
+ 	text-decoration: none;
+ 	background-color: #6FB022;
+ 	padding: 7px;
+ 	-webkit-border-radius: 5px;
+ 	-moz-border-radius: 5px;
+ 	border-radius: 5px;
+ 	margin-right: 5px;
+ }
+
+ .menu-top a:hover {
+	background-color: #F00;
+ }
+
+/******* fb like pop-up hider ******/
+
+.fb-like {
+	margin-top: 10px;
+	overflow: hidden;
+	height: 20px;
+}
+
+
+/********** pagination ********/
+
+#page-1 {
+	display: block;
+}
+
+.paginated {
+	display: none;
+}
+
+/******* Modal ********/
+
+.modal-header {
+border-bottom: none;
+}
+.modal-body {
+position: relative;
+padding: 0 20px 20px;
+}
+
+/******** faConcours *******/
+
+.txt-header {
+position: absolute;
+left: 50px;
+top: 44px;
+color: #FFF;
+font-size: 24px
+}
+
+.jeParticipe {
+	background-image: url('../img/accueil.jpg');
+text-align: center;
+width: 100%;
+margin: 100px auto 0;
+height: 489px;
+padding-top: 410px;
+}
+
+.inscription-block {
+background-image: url('../img/bckg-form.jpg');
+text-align: center;
+width: 100%;
+margin: 100px auto 0;
+height: 492px;
+padding-top: 40px;
+padding-left: 45px;
+}
+
+.menu-bottom {
+position: relative;
+margin: 0 auto;
+width: 810px;
+text-align: center;
+background-color: #414141;
+margin-top: -2px;
+padding: 5px;
+}
+
+.shareBlock {
+height: 702px;
+padding-top: 130px;
+text-align: center;
+color: #444;
+}
+
+.shareBlock .btn-multi {
+display: block;
+margin-bottom: 35px;
+}
+
+.btn-container {
+display: inline-block;
+margin: 0px auto 20px;
+}
+
+h1 {
+	font-family: 'Yanone Regular';
+	font-size: 58px;
+}
+
+h2 {
+	font-family: 'Yanone Regular';
+	font-size: 26px;
+	margin-top: 10px;
+}
+
+
+.menu-bottom a {
+	color: white;
+	margin: 0 15px;
+}
+
+.footer .doc {
+font-style: italic;
+color: #444444;
+}
+
+.footer .doc:hover {
+font-style: italic;
+color: red;
+}
+
+.copyright a {
+display: inline-block;
+font-size: 12px;
+color: #CCC;
+font-family: Arial;
+font-style: italic;
+}
+
+.copyright div {
+	display: inline-block;
+	position: relative;
+	top: -8px;
+}
+
+.copyright img {
+	height: 30px;
+	vertical-align: baseline;
+}
+
+.likeBox {
+	background-image: url('../img/fangate.jpg');
+	height: 700px;
+}
+
+.likeBox .fb-like {
+	margin-top: 289px;
+	margin-left: 472px;
+	/*overflow: hidden;*/
+	height: 61px;
+}
+
+.fa {
+color: #E3001B;
+font-size: 28px;
+margin-top: 2px;
+}
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+    display: none !important;
+}
+
+.content-block {
+	height: 702px;
+	padding-top: 110px;
+	text-align: center;
+	color: #444;
+}
+
+/******* Form ******/
+
+#form-inscription {
+width: 320px;
+}
+
+#form-inscription input[type="text"] {
+width: 100%;
+padding: 6px 10px 3px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+#send-form {
+/*position: absolute;
+left: 45px;
+top: 505px;*/
+cursor: pointer;
+}
+
+#subfile{
+	width: 75% !important;
+background-color: #F5F5F5;
+}
+
+.fakeBrowse{
+	background-color: grey;
+	height: 41px;
+	margin-top: -3px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.checkboxFive {
+width: 25px;
+position: relative;
+display: inline-block;
+margin-right: 15px;
+margin-bottom: 18px;
+margin-top: 10px;
+}
+
+#form-inscription .error {
+position: absolute;
+font-size: 14px;
+padding-left: 20px;
+margin-top: -20px;
+color: red;
+}
+
+.input-append {
+position: relative;
+margin-top: -20px;
+margin-bottom: 5px;
+}
+
+#form-mesPhotos #imgFileAuto {
+	position: absolute;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #797979;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #797979;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #797979;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #797979;
+}
+
+
+/***** btn ********/
+
+.icon-block {
+background-color: #FFF;
+padding: 6px 10px;
+display: inline-block;
+height: 40px;
+width: 48px;
+}
+
+.btn-txt {
+display: inline-block;
+width: 272px;
+background-color: #E3001B;
+color: #FFF;
+height: 40px;
+text-align: center;
+vertical-align: top;
+margin-left: -4px;
+padding: 5px;
+font-size: 23px;
+}
+
+.btn-multi {
+	box-shadow: 1px 1px 0 #4C0009;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+/****** top menu *****/
+.top-menu {
+text-align: left;
+padding-left: 40px;
+margin-bottom: 10px;
+font-weight: 600;
+letter-spacing: -1px;
+}
+
+.top-menu a {
+color: #444444;
+margin-right: 15px;
+}
+
+.top-menu a.active {
+	color: #e3001b;
+}
+
+.top-menu a:hover {
+	text-decoration: none;
+	color: #e3001b;
+}
+
+
+/**** mesPhotos ****/
+
+.mesPhotos-block {
+text-align: left;
+padding-left: 40px;
+margin-bottom: 20px;
+}
+
+.photo-box {
+height: 160px;
+overflow: hidden;
+display: inline-block;
+float: left;
+}
+
+.info {
+width: 240px;
+height: 160px;
+display: inline-block;
+background-color: #FFF;
+float: left;
+font-size: 18px;
+letter-spacing: -0.5px;
+}
+
+.underImage-block {
+	width: 160px;
+	background-color: white;
+	float: left;
+	height: 42px;
+}
+
+.score-block {
+	width: 240px;
+background-color: #444;
+display: inline-block;
+	color: white;
+	float: left;
+	padding-left: 10px;
+font-size: 30px;
+}
+
+.shareBox {
+	width: 110px;
+	background-color: white;
+	float: left;
+	height: 42px;
+}
+
+.btn-box {
+	width: 50px;
+	float: left;
+	height: 42px;
+	padding: 4px 11px;
+}
+
+a.btn-next, a.btn-previous {
+vertical-align: top;
+}
+
+.btn-box.valid {
+	background-color: #008000;
+}
+
+.btn-box.pending {
+	background-color: #F90;
+}
+
+.btn-box.denied {
+	background-color: #e3001b;
+}
+
+.btn-box i {
+	color: white;
+	font-size: 32px;
+}
+
+.info p {
+margin: 5px 0 0 10px;
+}
+
+.bold {
+font-family: 'Yanone Bold';
+font-weight: 700;
+}
+
+#page-mesPhotos .pagination-btn {
+position: absolute;
+top: 590px;
+width: 810px;
+}
+
+#page-mesPhotos .action-block {
+	position: absolute;
+width: 810px;
+top: 635px;
+}
